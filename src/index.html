@@ -4,11 +4,54 @@
 <head>
 	<title>Ejemplo básico</title>
 	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="index.css">
 </head>
-
+ 
 <body>
-	<h1>La aplicación esta corriendo!</h1>
+	<h1>To Do list</h1>
+	<form id="input-container">
+		<input id="input-todo" type="text" placeholder="enter">
+		<button id="add-todo" type="submit">+</button>
+	</form>
 
+	<div class="todo-container">
+		<div class="todo">
+			<div class="todo-info">
+				<input type="checkbox" class="todo-completed" checked>
+			 <p class="todo-name">catchat la</p>
+
+	        </div>
+		
+			<div class="todo-btn"> 
+			  <button class="todo-edit">Edit</button>
+			  <button class="todo-delete">delete</button>
+
+		     </div>
+	   </div>
+       <div class="todo">
+		  <div class="todo-info">
+			  <input type="checkbox" class="todo-completed"checked>
+		      <p class="todo-name">cahrth la</p>
+		  </div>
+		   <div class="todo-btn">
+			  <button class="todo-edit">edit</button>
+			   <button class="todo-delete">delete</button>
+			</div>
+		</div>
+	
+		
+	</div>
+
+
+
+
+   <div>
+	<div class="todo">
+		<input type="cheakbox" class="todo-completed" checked>
+		<p class="todo-name">chatch</p>
+	</div>
+   </div>
+   <div class=""></div>
 	<script src="./index.js" type="module"></script>
 </body>
 
