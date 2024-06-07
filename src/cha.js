@@ -1,9 +1,6 @@
 import { fetchtodo } from "./index2";
 import { postLlamado } from "./index3";
 import {deletetarea } from "./index4";
-import { checkbox } from "index5";
-
-
 
 // Inserte el código aquí
 let taskInput =document.getElementById("taskInput")
@@ -14,17 +11,16 @@ let tasksContainer= document.getElementById("tasksContainer")
 
 
 
-  // addTaskButton.addEventListener("click",alert);
+  addTaskButton.addEventListener("click",alert);
   taskInput.addEventListener("keypress",(e) =>{
-    if (e.key === "Enter" && taskInput.value !="") {
+    if (e.key === "Enter" && addTaskButton !="") {
        console.log("aqui vamos")
       postLlamado(taskInput.value)
       yaEsTiempo();
     }
-    if(e.key === "Enter" && taskInput.value ==""){
+    else{
       alert("no hay datos")
     }
-    
     })
     
 
@@ -34,7 +30,12 @@ addTaskButton.addEventListener("click",function (){
 
   if( taskInput.value !="" &&  addTaskButton.value !="" && tasksContainer.value !="" ){
     alert( taskInput.value )
+    const data={
+      taskInput     :  taskInput.value ,
+      addTaskButton :  addTaskButton.value ,
+      tasksContainer: tasksContainer.value,
 
+       }
     }
   })
 async function yaEsTiempo() {//promesa realiza
@@ -90,11 +91,15 @@ yaEsTiempo();
 
 
 addTaskButton.addEventListener("click", function () {
+  //botn agregar
 
+  let p= document.createElement("p")
+  p.innerHTML=taskInput.value  
+  console.log(p)
+  tasksContainer .appendChild(p)
   postLlamado(taskInput.value)
-  yaEsTiempo();
 
-  
+
   
 })
 
