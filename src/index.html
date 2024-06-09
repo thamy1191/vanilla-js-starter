@@ -8,51 +8,36 @@
 </head>
  
 <body>
-	<h1>To Do list</h1>
-	<form id="input-container">
-		<input id="input-todo" type="text" placeholder="enter">
-		<button id="add-todo" type="submit">+</button>
-	</form>
+	<div class="container">
+        <h1>To Do list</h1>
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="Ingresar tarea">
+            <button id="addTaskButton">Agregar</button>
+        </div>
+        
+        <div 
+        class="tasks-container" id="tasksContainer">
+        
+        
+            <p></p>
+        </div>
+        <div class="completed-tasks">
+            
+            <h1>Tareas Completadas</h1>
+             <div class="completed-count" id="completedTasksCounter">0</div>
+        </div>
+        
+            <div class="selectcheckbox"></div>
+            <p></p>
+           
 
-	<div class="todo-container">
-		<div class="todo">
-			<div class="todo-info">
-				<input type="checkbox" class="todo-completed" checked>
-			 <p class="todo-name">catchat la</p>
+        </div>
 
-	        </div>
-		
-			<div class="todo-btn"> 
-			  <button class="todo-edit">Edit</button>
-			  <button class="todo-delete">delete</button>
+    </div>
+    
 
-		     </div>
-	   </div>
-       <div class="todo">
-		  <div class="todo-info">
-			  <input type="checkbox" class="todo-completed"checked>
-		      <p class="todo-name">cahrth la</p>
-		  </div>
-		   <div class="todo-btn">
-			  <button class="todo-edit">edit</button>
-			   <button class="todo-delete">delete</button>
-			</div>
-		</div>
-	
-		
-	</div>
-
-
-
-
-   <div>
-	<div class="todo">
-		<input type="cheakbox" class="todo-completed" checked>
-		<p class="todo-name">chatch</p>
-	</div>
-   </div>
-   <div class=""></div>
 	<script src="./index.js" type="module"></script>
+	
 </body>
 
 </html>
