@@ -1,86 +1,102 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #F4F4F4;
+    background-color: #f4f4f400;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-image: url(./img/mujer.jpg);
+  background-size: 38%;
+  background-position:center ; 
+   
 }
 .container {
-    background-color: #fff;
+    background-color:#faf2f2a0;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 0 100px rgba(10, 10, 10, 0.605);
     width: 300px;
 }
 h1 {
     font-size: 24px;
     margin-bottom: 20px;
     text-align: center;
+    color: #df0d0dc6;
 }
 .input-container {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    color: rgb(246, 14, 14);
+    
 }
 #taskInput {
     flex: 1;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(13, 13, 13);
     border-radius: 4px;
     margin-right: 10px;
+   
 }
 #addTaskButton {
     padding: 10px;
-    background-color: #007BFF;
+    background-color: #f30d0dec;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 30px;
     cursor: pointer;
+    
 }
 #addTaskButton:hover {
-    background-color: #0056B3;
+    background-color: rgba(239, 12, 12, 0.824);
 }
 .tasks-container {
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 4px;
-    height: 150px;
+    
+   background-color:  rgba(243, 236, 236, 0.735);
+    border: 1px solid #0a0a0ad2;;
+    padding: 30px;
+    border-radius: 10px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow-y: auto;
+  
+    
+    
 }
 .tasks-container p {
-    margin: 0;
-    color: #888;
+    margin-left: -35%;
+    color: rgba(12, 12, 12, 0.694);;
+
 }
 .task-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid black;;
     width: 100%;
     box-sizing: border-box;
 }
 .task-item.completed {
     text-decoration: line-through;
-    color: #888;
+    color:rgb(12, 12, 12);;
 }
 .completed-tasks {
     margin-top: 20px;
     text-align: center;
+    color: rgb(232, 24, 24);
 }
-.completed-tasks h3 {
+.completed-tasks h1 {
     margin-bottom: 10px;
 }
 .completed-count {
     font-size: 24px;
-    background-color: #eee;
+    background-color:rgba(231, 223, 223, 0.829);
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -91,8 +107,30 @@ h1 {
 }
 .delete-icon {
     cursor: pointer;
-    color: red;
+    color: rgba(234, 227, 227, 0.708);
 }
 .delete-icon:hover {
-    color: darkred;
+    color: rgba(220, 207, 207, 0.79);
+}
+.completada_{
+    margin-left: -50px;
+
+
+}
+.eliminar-btn{
+    margin-left: 80%;
+    margin-top: -10%;
+    background-color: rgba(255, 0, 0, 0.731);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 10px;
+    
+    
+}
+.completada-checkbox{
+    margin-right:  110%;
+    margin-top: -10%;
+    
 }
